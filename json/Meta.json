@@ -1,0 +1,295 @@
+{
+   "PreTrade" :[
+        {
+            "title":"Impact",
+            "templateUrl":"layout_0.html",
+            "PartialLayout": [
+                 	{
+	                   "id": "layout_0_01",
+	                   "jsonData": "table5.json",
+	                   "type" :"Table",                   
+	                    "Url": "table.html",
+                   		"options":[
+                   					{			               
+				                    	"rowHiding":true				                    	
+                   					}	
+                   				]          
+                	},
+                	{
+	                    "id": "layout_0_02",
+	                    "jsonData": "table3.json",
+	                    "type" :"Table",
+	                    "Url":"table.html",
+                     	"options":[
+                     				{
+				                     	"gridLock":true,
+					                    "columnReorder":true,
+					                    "columnFilter":true,					                   
+					                    "columnGrouping":true
+                     				}
+                     			]                          
+                },
+                {
+                     "id": "layout_0_03",
+                     "jsonData": "table2.json",
+                     "type" :"Table",
+                     "Url": "table.html",
+                     "options":[
+                     			 {
+			                     	 "gridLock":true,
+				                     "columnReorder":true
+				                  }
+				               	]                  
+                },
+                {
+                    "id": "layout_0_04",
+                    "jsonData": "graphConsolidated.json",
+                   	"type" :"Graph",
+                    "Url": "chart.html",
+                    "options":[
+                    			{			                    
+		                         "type": "candlestick",
+		                         "title":"AAPL stock price",
+		                         "yaxisTitle":"OHLC",		                         					
+		                         "field":["pt_3","pt_4","pt_5","pt_6"]		                           
+                     			 },
+                     			 {			                    
+		                         "type": "column",
+		                         "title":"USD to EUR exchange rate",
+		                         "yaxisTitle":"Volume",		                         					
+		                         "field":["pt_7"]		                           
+                     			 }
+                     		]
+                  }
+          ]
+    },
+
+    {
+       "title":"Basket Details",
+       "templateUrl":"layout_1.html",
+       "PartialLayout": [
+              {
+                  "id": "layout_1_01", 
+                  "jsonData": "table2.json",
+                  "type" :"Table",
+                  "Url": "table.html",
+                  "options":[
+                  			   {
+		                     	   "gridLock":true,
+			                    	"columnReorder":true,			                    	
+			                    	"rowHiding":true,
+			                    	"columnGrouping":true
+		                       }
+		                    ]
+		        },
+                {
+                    "id": "layout_1_02", 
+                   "jsonData": "graphConsolidated.json",                   
+                    "type" :"Graph",
+                    "Url": "chart.html",
+                    "options":[
+		                        
+		                         {
+		                         	"type":"multiple",
+		                         	"yaxisTitle":"AAPL",		                         					
+		                         	"field":["pt_8","pt_9","pt_10"]
+		                         },
+		                         {
+		                         	"type":"column",
+		                         	"yaxisTitle":"volume",		                         					
+		                         	"field":["pt_7"]
+		                         }	                       
+		                                                
+                      			
+                      		]                
+                },
+                {
+                    "id": "layout_1_03",  
+                    "jsonData": "table3.json",
+                    "type" :"Table",
+                    "Url": "table.html",
+                    "options":[
+                    			{
+			                    	"columnReorder":true,
+			                    	"columnFilter":true,
+			                    	"rowHiding":true
+			                     }
+			                  ]
+			   }
+         ]
+   },
+   {
+      "title":"Trade Activity",
+      "templateUrl":"layout_2.html",
+      "PartialLayout": [
+              {
+                  "id": "layout_2_01", 
+                  "jsonData": "table4.json",
+                  "type" :"Table",
+                  "Url": "table.html",
+                  "options":[
+                  			   {
+		                     		"gridLock":true,
+			                    	"columnReorder":true,
+			                    	"columnFilter":true,
+			                    	"rowHiding":true,
+			                    	"columnGrouping":true
+                     		    }
+                            ]                 
+               },
+               {
+                   "id": "layout_2_02",
+                   "jsonData": "table3.json",
+                   "type" :"Table",
+                   "Url": "table.html",
+                   "options":[
+                   				{
+			                     	"gridLock":true,
+				                    "columnReorder":true,
+				                    "columnFilter":true,				                    
+				                    "columnGrouping":true
+				        		}
+                     		]
+              },
+              {
+                 "id": "layout_2_03", 
+                 "jsonData": "table1.json",
+                 "type" :"Table",
+                 "Url": "table.html",
+                 "options":[
+                 			 {
+		                     	 "columnReorder":true,
+			                    "columnFilter":true,
+			                    "rowHiding":true,
+			                    "columnGrouping":true
+							}
+						]
+			  },
+              {
+                 "id": "layout_2_04",  
+                 "jsonData": "graphConsolidated.json",                 
+                 "type" :"Graph",
+                 "Url": "chart.html",
+                 "options":[
+                 			{
+		                   		
+		                        "type": "multiple",
+		                        "title":"AAPL Historical",
+		                        "yaxisTitle":"multiple",		                         					
+		                        "field":["pt_8","pt_9","pt_10"]	
+		                        
+                   			}
+                   		]                  
+                }
+         ]
+   },
+   {
+      "title":"Market Condition",
+      "templateUrl":"layout_3.html",
+      "PartialLayout": [
+               {
+                  "id": "Layout_3_01",   
+                  "jsonData": "graphConsolidated.json",                 
+                  "type" :"Graph",
+                  "Url": "chart.html",
+                  "options":[
+                  			  {
+		                   			"type": "flags",
+		                            "title":"USD to EUR exchange rate",
+		                            "yaxisTitle":"flag",		                         					
+		                         	"field":["pt_0"]
+		                           
+                  			  },
+                  			  {
+		                   			"type": "arearange",		                           
+		                            "yaxisTitle":"Area",		                         					
+		                         	"field":["pt_1","pt_2"]
+		                           
+                  			  }
+                  		  ]
+                    
+                },
+                {
+                   "id": "layout_3_02",   
+                   "jsonData": "table2.json",
+                   "type" :"Table",
+                   "Url":"table.html",
+                   "options":[
+                   				{
+			                     	"gridLock":true,
+				                    "columnReorder":true,				                    
+				                    "rowHiding":true				                   
+                     			}
+                     		]                   
+                },
+                {
+                   "id": "layout_3_03",  
+                   "jsonData": "table3.json",
+                   "type" :"Table",
+                   "Url": "table.html",
+                   "options":[
+                   				{
+			                     	"gridLock":true,
+				                    "columnReorder":true,
+				                    "columnFilter":true,
+				                    "rowHiding":true				                    
+				                 }
+                     		]
+                 },        
+                 {
+                    "id": "layout_3_04", 
+                    "jsonData": "graphConsolidated.json",                   
+                    "type" :"Graph",
+                    "Url": "chart.html",
+                    "options":[
+                    			{
+			                   		"type": "flags",
+		                            "title":"USD to EUR exchange rate",
+		                            "yaxisTitle":"OHLC",		                         					
+		                         	"field":["pt_0"]	
+		                           
+			                        
+		                                                 
+                   				}
+                   			]                    
+                }
+                      
+        ]
+    },
+    {
+      "title":"Trade Perspective",
+      "templateUrl":"layout_3.html",
+      "PartialLayout": [
+                {
+                   "id": "layout_4_01", 
+                   "jsonData": "graphConsolidated.json",
+                   "type" :"Graph",
+                   "Url": "chart.html",
+                   "options":[
+                   				{
+			                   		"type": "flags",
+		                            "title":"USD to EUR exchange rate",
+		                            "yaxisTitle":"flag",		                         					
+		                         	"field":["pt_0"]
+		                           
+			                     }
+			                  ]                   
+                },
+                {
+                   "id": "layout_4_02",
+                   "jsonData": " table4.json",
+                   "type" :"Table",
+                   "Url": "table.html",
+                   "options":[
+                   				{
+			                     	"gridLock":true,				                    
+				                    "columnFilter":true,
+				                    "rowHiding":true,
+				                    "columnGrouping":true
+				                 }
+				              ]                   
+                }
+            ]
+        }
+    ]
+}

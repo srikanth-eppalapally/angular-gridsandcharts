@@ -1,0 +1,94 @@
+{
+    "Graphs":[
+        {
+
+            "data": [
+                [
+                    {
+                        "date": 1190073600000,
+                        "open": 19.87,
+                        "high": 20.41,
+                        "low": 19.69,
+                        "close": 20.13,
+                        "volume": 266022015,
+                        "usd": 0.8709,
+                        "temp1": -5.8,
+                        "temp2": 0.1,
+                        "multiple1": 23.15,
+                        "multiple2":20.5,
+                        "multiple3":26.6
+                    },
+                    {
+                        "date": 1190246400000,
+                        "open": 20.02,
+                        "high":20.26,
+                        "low": 19.90,
+                        "close": 20.04,
+                        "volume": 172959773,
+                        "usd": 0.8714,
+                        "temp1": -0.5,
+                        "temp2":4.1,
+                        "multiple1": 22.73,
+                        "multiple2":23.5,
+                        "multiple3":28.6
+                    },
+                    {
+                        "date": 1190332800000,
+                        "open": 20.16,
+                        "high": 20.66,
+                        "low": 20.04,
+                        "close": 20.59,
+                        "volume": 284654174,
+                        "usd": 0.8638,
+                        "temp1": -8.9,
+                        "temp2": -0.7,
+                        "multiple1": 22.83,
+                        "multiple2":25.5,
+                        "multiple3":30.6
+                    },
+                    {
+                        "date": 1190592000000,
+                        "open": 20.96,
+                        "high": 21.41,
+                        "low": 20.95,
+                        "close": 21.18,
+                        "volume": 266022015,
+                        "usd": 0.8567,
+                        "temp1":-9.7,
+                        "temp2": -3.7,
+                        "multiple1": 22.56,
+                        "multiple2":27.5,
+                        "multiple3":32.6
+                    },
+                    {
+                        "date": 1190678400000,
+                        "open": 20.98,
+                        "high":21.89,
+                        "low": 20.97,
+                        "close": 21.88,
+                        "volume": 298137175,
+                        "usd": 0.8536,
+                        "temp1": -3.4,
+                        "temp2":3.2,
+                        "multiple1": 22.88,
+                        "multiple2":29.5,
+                        "multiple3":34.6
+                    },
+                    {
+                        "date": 1190764800000,
+                        "open": 22.07,
+                        "high":22.14,
+                        "low": 21.61,
+                        "close": 21.82,
+                        "volume": 243816790,
+                        "usd": 0.8564,
+                        "temp1": -9.7,
+                        "temp2":-3.7,
+                        "multiple1": 22.56,
+                        "multiple2":31.5,
+                        "multiple3":36.6
+                    }]
+            ]
+        } ]
+
+}

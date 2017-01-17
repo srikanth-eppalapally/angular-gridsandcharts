@@ -1,0 +1,52 @@
+{
+    "tables":[
+        {
+            "Dashboard": [
+                {
+                    "school": "5",
+                    "area": "Doe",
+                    "strength": 39,
+                    "sex": "M",
+                    "salary": 70000,
+                    "staff": true,
+                    "state": "Blue",
+                    "Van": "Soccer",
+                    "Bus": "Spaghetti"
+                },
+                {
+                    "school": "5",
+                    "area": "Doe",
+                    "strength": 39,
+                    "sex": "M",
+                    "salary": 70000,
+                    "staff": true,
+                    "state": "Blue",
+                    "Van": "Soccer",
+                    "Bus": "Spaghetti"
+                },
+                {
+                    "school": "5",
+                    "area": "Doe",
+                    "strength": 39,
+                    "sex": "M",
+                    "salary": 70000,
+                    "staff": true,
+                    "state": "Blue",
+                    "Van": "Soccer",
+                    "Bus": "Spaghetti"
+                },
+                {
+                    "school": "5",
+                    "area": "Doe",
+                    "strength": 39,
+                    "sex": "M",
+                    "salary": 70000,
+                    "staff": true,
+                    "state": "Blue",
+                    "Van": "Soccer",
+                    "Bus": "Spaghetti"
+                }
+            ]
+        }
+    ]
+}

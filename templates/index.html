@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular Sample</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/font-awesome.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/ng.css" type="text/css"/>
+    <script src="../scripts/jquery-1.11.1.min.js"></script>
+    <script src="../scripts/angular-1.2.21.min.js" type="application/javascript"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+    <script src="../scripts/ng-grid.js" type="application/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-grid/2.0.11/ng-grid-reorderable.js" type="application/javascript"></script>
+    <script src="http://code.highcharts.com/stock/highstock.js"></script>
+    <script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="http://code.highcharts.com/stock/highcharts-more.js"></script>
+</head>
+<body ng-app="myApp">
+<div class="header"></div>
+<div class="container" ng-controller="mainController">
+<div class="leftNavWrapper">
+<ul>
+<li ng-repeat="listTitle in sideBarTitle" ng-click = "showTemplate($index)" ng-class="{'active':$index == selectedIndex}"><a href="#"> {{listTitle.title}} </a></li>
+</ul>
+</div>
+<div class="rightContentWrapper" ng-include="myTemplate">
+</div>
+</div>
+<div class="footer"></div>
+<script src="../scripts/service.js" type="text/javascript"></script>
+<script src="../scripts/chart-adapter.js" type="text/javascript"></script>
+<script src="../scripts/app.js" type="text/javascript"></script>
+</body>
+</html>

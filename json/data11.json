@@ -1,0 +1,533 @@
+{
+    "menuItems": [
+        {
+            "title": "Dashboard",
+            "templateUrl": "dashboard.html",
+            "PartialDetails": [
+                {
+                    "id": "layout1",
+                    "jsonData": "table5.json",
+                    "type": "table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }
+                    ],
+                    "num": 0
+                },
+                {
+                    "id": "layout2",
+                    "jsonData": "graph1.json",
+                    "type": "Graph",
+                    "Url": "charts.html",
+                    "options": [
+                        {
+                            "graphNum": 11,
+                            "type": "flag",
+                            "seriesVal": [
+                                {
+                                    "name": "USD to EUR",
+                                    "data": "ohlc",
+                                    "id": "dataseries",
+                                    "tootip": {
+                                        "valueDecimals": 4
+                                    },
+                                    "flags":["usd"]
+                                },
+                                {
+                                    "type": "flags",
+                                    "name": "Flags on series",
+                                    "data": [
+                                        {
+                                            "x": "Date.UTC(2011, 1, 22)",
+                                            "title": "On series"
+                                        },
+                                        {
+                                            "x": "Date.UTC(2011, 3, 28)",
+                                            "title": "On series"
+                                        }
+                                    ],
+                                    "onSeries": "dataseries",
+                                    "shape": "squarepin",
+                                    "flags":["usd"]
+                                },
+                                {
+                                    "type": "flags",
+                                    "name": "Flags on axis",
+                                    "data": [
+                                        {
+                                            "x": "Date.UTC(2011, 2, 1)",
+                                            "title": "On series"
+                                        },
+                                        {
+                                            "x": "Date.UTC(2011, 3, 1)",
+                                            "title": "On series"
+                                        }
+                                    ],
+                                    "onSeries": "",
+                                    "shape": "squarepin",
+                                    "flags":["usd"]
+                                }
+                            ],
+                            "chart": {
+                                "type": ""
+                            },
+                            "yAxis": {
+                                "title": {
+                                    "text": "Exchange rate"
+                                }
+                            }
+                        }
+                    ],
+                    "num": 0
+                },
+                {
+                    "id": "layout3",
+                    "jsonData": "table3.json",
+                    "type": "table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }
+                    ],
+                    "num": 0
+                },
+                {
+                    "id": "layout4",
+                    "jsonData": "graph2.json",
+                    "type": "Graph",
+                    "Url": "charts.html",
+                    "options": [
+                        {
+                            "graphNum": 12,
+                            "type": "arearange",
+                            "title": "Temperature variation by day",
+                            "chart": {
+                                "type": "arearange"
+                            },
+                            "seriesVal": [
+                                {
+                                    "name": "Temperatures",
+                                    "flags":["temp1","temp2"]
+                                }
+                            ],
+                            "tooltip": {
+                                "pointFormat": "<span style='color:{series.color}'>{series.name}</span>: <b>{point.y}</b> ({point.change}%)<br/>",
+                                "valueDecimals": "",
+                                "valueSuffix": "°C"
+                            }
+                        }
+                    ],
+                    "num": 0
+                }
+            ]
+        },
+        {
+            "title": "Components",
+            "templateUrl": "Components.html",
+            "PartialDetails": [
+                {
+                    "id": "layout1",
+                    "jsonData": "table2.json",
+                    "type": "table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }
+                    ],
+                    "num": 0
+                },
+                {
+                    "id": "layout2",
+                    "jsonData": "graph2.json",
+                    "type": "Graph",
+                    "Url": "charts.html",
+                    "options": [
+                        {
+                            "graphNum": 12,
+                            "type": "arearange",
+                            "title": "Temperature variation by day",
+                            "chart": {
+                                "type": "arearange"
+                            },
+                            "seriesVal": [
+                                {
+                                    "name": "Temperatures",
+                                    "flags":["temp1","temp2"]
+                                }
+                            ],
+                            "tooltip": {
+                                "pointFormat": "<span style='color:{series.color}'>{series.name}</span>: <b>{point.y}</b> ({point.change}%)<br/>",
+                                "valueDecimals": "",
+                                "valueSuffix": "°C"
+                            }
+
+                        }
+                    ],
+                    "num": 0
+                }
+            ]
+        },
+        {
+            "title": "UI Elements",
+            "templateUrl": "uiElements.html",
+            "PartialDetails": [
+                {
+                    "id": "layout1",
+                    "jsonData": "table4.json",
+                    "type": "table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }
+                    ],
+                    "num": 0
+                },
+                {
+                    "id": "layout2",
+                    "jsonData": "table2.json",
+                    "type": "table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }
+                    ],
+                    "num": 0
+                },
+                {
+                    "id": "layout3",
+                    "jsonData": "graph2.json",
+                    "type": "Graph",
+                    "Url": "charts.html",
+                    "options": [
+                        {
+                            "graphNum": 12,
+                            "type": "arearange",
+                            "title": "Temperature variation by day",
+                            "chart": {
+                                "type": "arearange"
+                            },
+                            "seriesVal": [
+                                {
+                                    "name": "Temperatures",
+                                    "flags":["temp1","temp2"]
+
+                                }
+                            ],
+                            "tooltip": {
+                                "pointFormat": "<span style='color:{series.color}'>{series.name}</span>: <b>{point.y}</b> ({point.change}%)<br/>",
+                                "valueDecimals": "",
+                                "valueSuffix": "°C"
+                            }
+
+                        }
+                    ],
+                    "num": 0
+                }
+            ]
+        },
+        {
+            "title": "Tables",
+            "templateUrl": "Tables.html",
+            "PartialDetails": [
+                {
+                    "id": "layout1",
+                    "jsonData": "table1.json",
+                    "type": "table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }
+                    ],
+                    "num": 0
+                },
+                {
+                    "id": "layout2",
+                    "jsonData": "graph4.json",
+                    "type": "Graph",
+                    "Url": "charts.html",
+                    "options": [
+                        {
+                            "graphNum": 41,
+                            "type": "multiple",
+                            "title": "AAPL Historical",
+                            "seriesVal": [
+                                {
+                                "flags":["multiple"]
+                                }
+                            ],
+                            "tooltip": {
+                                "pointFormat": "<span style='color:{series.color}'>{series.name}</span>: <b>{point.y}</b> ({point.change}%)<br/>",
+                                "valueDecimals": 2,
+                                "valueSuffix": ""
+                            },
+                            "yAxis": {
+                                "labels": {
+                                    "formatter": "function () {return (this.value > 0 ? ' + ' : '') + this.value + '%';"
+                                }
+                            },
+                            "plotLines": [
+                                {
+                                    "value": 0,
+                                    "width": 2,
+                                    "color": "silver"
+                                },
+                                {
+                                    "series": {
+                                        "compare": "percent"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "num": 0
+                },
+                {
+                    "id": "layout3",
+                    "jsonData": "table4.json",
+                    "type": "table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }
+                    ],
+                    "num": 0
+                },
+                {
+                    "id": "layout4",
+                    "jsonData": "graph5.json",
+                    "type": "Graph",
+                    "Url": "charts.html",
+                    "options": [
+                        {
+                            "graphNum": 42,
+                            "type": "candlestick",
+                            "title": "AAPL Historical",
+                            "seriesVal": [
+                                {
+                                    "yAxis": [
+                                        {
+                                            "label": [
+                                                {
+                                                    "align": "right"
+                                                },
+                                                {
+                                                    "x": 3
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": [
+                                                {
+                                                    "text": "OHLC"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "height": "60%"
+                                        },
+                                        {
+                                            "linewidth": 2
+                                        },
+                                        {
+                                            "offset": 0
+                                        }
+                                    ],
+                                    "series": [
+                                        {
+                                            "type": "candlestick"
+                                        },
+                                        {
+                                            "name": "OHLC"
+                                        },
+                                        {
+                                            "yAxis": 0
+                                        },
+                                        {
+                                            "fields": ["open", "high", "low", "close"]
+                                        }
+                                    ],
+                                    "flags":["date","open","high","low","close"]
+                                },
+                                {
+                                    "yAxis": [
+                                        {
+                                            "label": [
+                                                {
+                                                    "align": "right"
+                                                },
+                                                {
+                                                    "x": 3
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": [
+                                                {
+                                                    "text": "Volume"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "height": "60%"
+                                        },
+                                        {
+                                            "linewidth": 2
+                                        },
+                                        {
+                                            "offset": 0
+                                        }
+                                    ],
+                                    "series": [
+                                        {
+                                            "type": "column"
+                                        },
+                                        {
+                                            "name": "Volume"
+                                        },
+                                        {
+                                            "yAxis": 1
+                                        },
+                                        {
+                                            "fields": ["volume"]
+                                        }
+                                    ],
+                                    "flags":["date","volume"]
+                                }
+                            ],
+                            "tooltip": {
+                                "pointFormat": "",
+                                "valueDecimals": "",
+                                "valueSuffix": ""
+                            }
+
+                        }
+                    ],
+                    "num": 0
+                }
+            ]
+        },
+        {
+            "title": "Forms",
+            "templateUrl": "Forms.html",
+            "PartialDetails": [
+                {
+                    "id": "layout1",
+                    "jsonData": "table3.json",
+                    "type": "table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }
+                    ],
+                    "num": 0
+                },
+                {
+                    "id": "layout2",
+                    "jsonData": "table1.json",
+                    "type": "table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }
+                    ],
+                    "num": 0
+                },
+                {
+                    "id": "layout3",
+                    "jsonData": "graph1.json",
+                    "type": "Graph",
+                    "Url": "charts.html",
+                    "options": [
+                        {
+                            "graphNum": 11,
+                            "type": "flag",
+                            "seriesVal": [
+                                {
+                                    "name": "USD to EUR",
+                                    "data": "ohlc",
+                                    "id": "dataseries",
+                                    "tootip": {
+                                        "valueDecimals": 4
+                                    },
+                                    "flags":["usd"]
+                                },
+                                {
+                                    "type": "flags",
+                                    "name": "Flags on series",
+                                    "data": [
+                                        {
+                                            "x": "Date.UTC(2011, 1, 22)",
+                                            "title": "On series"
+                                        },
+                                        {
+                                            "x": "Date.UTC(2011, 3, 28)",
+                                            "title": "On series"
+                                        }
+                                    ],
+                                    "onSeries": "dataseries",
+                                    "shape": "squarepin",
+                                    "flags":["usd"]
+                                },
+                                {
+                                    "type": "flags",
+                                    "name": "Flags on axis",
+                                    "data": [
+                                        {
+                                            "x": "Date.UTC(2011, 2, 1)",
+                                            "title": "On series"
+                                        },
+                                        {
+                                            "x": "Date.UTC(2011, 3, 1)",
+                                            "title": "On series"
+                                        }
+                                    ],
+                                    "onSeries": "",
+                                    "shape": "squarepin",
+                                    "flags":["usd"]
+                                }
+                            ],
+                            "chart": {
+                                "type": ""
+                            },
+                            "yAxis": {
+                                "title": {
+                                    "text": "Exchange rate"
+                                }
+                            }
+                        }
+                    ],
+                    "num": 0
+                }
+            ]
+        }
+    ]
+
+}

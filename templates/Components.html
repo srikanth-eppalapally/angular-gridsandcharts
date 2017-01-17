@@ -1,0 +1,33 @@
+<div class="col-xs-12 no-padng components">
+<h2>{{data.Components_title}}</h2>
+
+
+
+    <div class="no-padng " ng-repeat="val in partialData" id="{{val.id}}">
+        <div  class="pull-left no-padng col-xs-12" new-scope="" ng-init="griddata = val.jsonData;chartClass = val.options[0].graphNum;ind = $index + indexOf(val); callUrl($index,val,val.jsonData,ind)" ng-include="val.Url" >
+        </div>
+    </div>
+
+
+<style>
+    .components{
+        width:100%;
+        float: left;
+    }
+    .components #layout1{
+        width: 50%;
+        float: left;
+    }
+    .components #layout2{
+        width: 50%;
+        float: left;
+    }
+    .components #layout3{
+        width: 50%;
+        float: left;
+    }
+    .components #layout4{
+        width: 50%;
+        float: left;
+    }
+</style>

@@ -1,0 +1,325 @@
+{
+    "menuItems" :[
+        {
+            "title":"Dashboard",
+            "templateUrl":"dashboard.html",
+            "PartialDetails": [
+                {
+                    "id": "layout1",
+                    "jsonData": "table5.json",
+                    "type" :"table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }],
+                    "num":0
+                },
+                {
+                    "id": "layout2",
+                    "jsonData": "graph1.json",
+                    "type" :"Graph",
+                    "Url":"charts.html",
+                    "options":[
+                        {
+                            "graphNum":11,
+                            "type": "flag",
+                            "title":"USD to EUR exchange rate",
+                            "onseries":"dataseries",
+                            "shape":"squarepin"
+                        },
+                        {
+                            "type": "flags",
+                            "shape":"squarepin"
+                        }
+
+                    ],
+                    "num":0
+                },
+                {
+                    "id": "layout3",
+                    "jsonData": "table3.json",
+                    "type" :"table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }],
+                    "num":0
+                },
+                {
+                    "id": "layout4",
+                    "jsonData": "graph2.json",
+                    "type" :"Graph",
+                    "Url": "charts.html",
+                    "options":[
+                        {
+                            "graphNum":12,
+                            "type": "arearange",
+                            "title":"Temperature variation by day"
+                        }
+                    ],
+                    "num":0
+                }
+            ]
+        },
+        {
+            "title":"Components",
+            "templateUrl":"Components.html",
+            "PartialDetails": [
+                {
+                    "id": "layout1",
+                    "jsonData": "table2.json",
+                    "type" :"table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }],
+                    "num":0
+                },
+                {
+                    "id": "layout2",
+                    "jsonData": "graph2.json",
+                    "type" :"Graph",
+                    "Url": "charts.html",
+                    "options":[
+                        {
+                            "graphNum":21,
+                            "type": "arearange",
+                            "title":"Temperature variation by day"
+                        }
+                    ],
+                    "num":0
+                }
+            ]
+        },
+        {
+            "title":"UI Elements",
+            "templateUrl":"uiElements.html",
+            "PartialDetails": [
+                {
+                    "id": "layout1",
+                    "jsonData": "table4.json",
+                    "type" :"table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }],
+                    "num":0
+                },
+                {
+                    "id": "layout2",
+                    "jsonData": "table2.json",
+                    "type" :"table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }],
+                    "num":0
+                },
+                {
+                    "id": "layout3",
+                    "jsonData": "graph2.json",
+                    "type" :"Graph",
+                    "Url": "charts.html",
+                    "options":[
+                        {
+                            "graphNum":31,
+                            "type": "arearange",
+                            "title":"Temperature variation by day"
+                        }
+                    ],
+                    "num":0
+                }
+            ]
+        },
+        {
+            "title":"Tables",
+            "templateUrl":"Tables.html",
+            "PartialDetails": [
+                {
+                    "id": "layout1",
+                    "jsonData": "table1.json",
+                    "type" :"table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }],
+                    "num":0
+                },
+                {
+                    "id": "layout2",
+                    "jsonData": "graph3.json",
+                    "type" :"Graph",
+                    "Url":"charts.html",
+                    "options":[
+                        {
+                            "graphNum":41,
+                            "type": "multiple",
+                            "title":"AAPL Historical",
+                            "seriesVal": [{
+                                "series":[
+                                    {"fields":["multiple1","multiple2","multiple3"]}
+                                ]
+
+                            }]
+                        }
+                    ],
+                    "num":0
+                },
+                {
+                    "id": "layout3",
+                    "jsonData": "table4.json",
+                    "type" :"table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }],
+                    "num":0
+                },
+                {
+                    "id": "layout4",
+                    "jsonData": "graph3.json",
+                    "type" :"Graph",
+                    "Url": "charts.html",
+                    "options":[
+                        {
+                            "graphNum":42,
+                            "type": "candlestick",
+                            "title":"AAPL Historical",
+                            "seriesVal": [
+                                {
+                                    "yAxis":[
+                                        {
+                                            "label": [
+                                                {"align":"right"},
+                                                {"x":3}
+                                            ]
+                                        },
+                                        {
+                                            "title": [{"text":"OHLC"}]
+                                        },
+                                        {
+                                            "height":"60%"
+                                        },
+                                        {
+                                            "linewidth":2
+                                        },
+                                        {
+                                            "offset":0
+                                        }
+                                    ],
+                                    "series":[
+                                        {"type":"candlestick"},
+                                        {"name":"OHLC"},
+                                        {"yAxis":0},
+                                        {"fields":["date","open","high","low","close"]}
+                                    ]
+                                },
+                                {
+                                    "yAxis":[
+                                        {
+                                            "label": [{"align":"right"},{"x":3}]
+                                        },
+                                        {
+                                            "title": [{"text":"Volume"}]
+                                        },
+                                        {
+                                            "height":"60%"
+                                        },
+                                        {
+                                            "linewidth":2
+                                        },
+                                        {
+                                            "offset":0
+                                        }
+                                    ],
+                                    "series":[
+                                        {"type":"column"},
+                                        {"name":"Volume"},
+                                        {"yAxis":1},
+                                        {"fields":["date","volume"]}
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "num":0
+                }
+            ]
+        },
+        {
+            "title":"Forms",
+            "templateUrl":"Forms.html",
+            "PartialDetails": [
+                {
+                    "id": "layout1",
+                    "jsonData": "table3.json",
+                    "type" :"table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }],
+                    "num":0
+                },
+                {
+                    "id": "layout2",
+                    "jsonData": "table1.json",
+                    "type" :"table",
+                    "Url": "table.html",
+                    "options": [
+                        {
+                            "Pinning": true,
+                            "CellEdit": true,
+                            "RowReordering": true
+                        }],
+                    "num":0
+                },
+                {
+                    "id": "layout3",
+                    "jsonData": "graph1.json",
+                    "type" :"Graph",
+                    "Url": "charts.html",
+                    "options":[
+                        {
+                            "graphNum":11,
+                            "type": "flag",
+                            "title":"USD to EUR exchange rate",
+                            "onseries":"dataseries",
+                            "shape":"squarepin"
+                        },
+                        {
+                            "type": "flags",
+                            "shape":"squarepin"
+                        }
+
+                    ],
+                    "num":0
+                }
+            ]
+        }
+    ]
+
+}
